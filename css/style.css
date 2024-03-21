@@ -33,6 +33,10 @@ nav ul{
     list-style: none;
 }
 
+nav a{
+    color: gray;
+}
+
 button{
     all: unset;
     background-color: #00924b;
