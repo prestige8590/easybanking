@@ -1,0 +1,209 @@
+/* selector {
+    property: value;
+
+    gap, justify-content and align-items only work when you display as flex or grid
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans';
+}
+
+/* This removes all the decoration(underline) from all anchor tags */
+a{
+    text-decoration: none;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex; /*This makes the children stay in horizontal direction*/
+    align-items: center; /*This makes the children stay at the center of the parent*/
+    justify-content: space-between; /*This spreads out the children*/
+    padding: 20px 50px; /* This creates internal spacing */
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+button{
+    all: unset;
+    background-color: #00924b;
+    color: white;
+    padding: 7px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+    background-color: #F3F4F6;
+}
+
+main div{
+    width: 40%;
+}
+
+main img{
+    width: 45%;
+}
+
+main div h2{
+ font-size: 60px;
+ font-weight: 400;
+}
+
+main div p{
+    font-size:20px ;
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+#about, #article{
+    padding: 100px 50px;
+}
+
+#about .about-body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+    gap: 50px;
+}
+
+#about .about-body h1{
+    font-size: 18px;
+    margin: 10px 0;
+}
+#about .about-body p{
+    line-height: 1.4;
+}
+#about .parent-holder{
+    width: 45%;
+}
+
+#about .parent-holder h3{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 10px 0;
+  padding-bottom: 20px;
+}
+
+#about .parent-holder p{
+    font-size: 20px;
+}
+
+#article .prestige{
+    padding: 20px 0px;
+}
+
+article{
+    background-color: #F3F4F6;
+}
+#article .prestige {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+    gap: 50px;
+}
+
+#article .prestige img{
+    width: 100%;
+}
+
+#article .prestige .content{
+    box-shadow: 0px 0px 10px #a0a0a0;
+}
+
+#article .prestige .content div{
+    padding: 15px;
+}
+
+#article .prestige .content div a{
+    padding: 10px 0;
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+
+#article .prestige .content div p{
+    font-size: 14px;
+}
+
+#article .prestige .content div a:hover{
+    color: rgb(0, 204, 136);
+}
+
+article h1{
+    font-weight: 400;
+    color:gray;
+    font-size: 25px;
+    font-style: unset;
+}
+
+#article .prestige div h2{
+    font-size: 16px;
+}
+
+footer {
+    background-color: #2D314D;
+    padding: 50px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer img{
+    filter: invert(0.5);
+    margin-bottom: 3rem;
+}
+
+footer ul{
+    list-style: none;
+}
+
+.pdd ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pdd ul a{
+    color: #fff;
+    font-size: 20px;
+}
+
+.about-links{
+    display: flex;
+    gap: 80px;
+}
+
+.about-links a{
+    color: #F3F4F6;
+}
+
+footer p{
+    color: #F3F4F6;
+}
+
+.about-links a{
+    line-height: 32px;
+}
+
+footer div button{
+    margin-bottom: 15px;
+}
+
+
+
+
+
