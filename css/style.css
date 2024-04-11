@@ -207,6 +207,23 @@ footer div button{
     margin-bottom: 15px;
 }
 
+.togglers{
+    display: none; 
+}
+
+.ri-arrow-up-s-line{
+    position: fixed;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 1;
+    padding: 6px;
+    right: 30px;
+    bottom: 20px;
+    background-color: #31D35C;
+    color: #ffff;
+    cursor: pointer;
+}
+
 @media screen and (max-width:992px) {
     main div h2{
         font-size: 40px;
@@ -253,6 +270,35 @@ footer div button{
 }
 
 @media screen and (max-width:576px) {
+    nav{
+        padding: 20px;
+    }
+    .togglers{
+        display: block;
+        font-size: 22px;
+    }
+    
+    .ri-close-fill{
+        display: none;
+    }
+    
+    nav ul{
+        position: fixed;
+        top: -40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        border-radius: 10px;
+        text-align: center;
+        width: 60%;
+        padding: 2rem 0;
+        background-color: white;
+        border: 1px solid gray;
+        flex-direction: column;
+        transition: .5s;
+    }
+
+
     main{
         flex-direction: column-reverse;
         text-align: center;
@@ -275,8 +321,15 @@ footer div button{
         width: 95%;
         text-align: center;
     }
-}
 
+    .about-links{
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+    }
+    
+}
 @media screen and (max-width:375px) {
 
     #about{
@@ -300,6 +353,9 @@ footer div button{
     }
 
     #about .about-body{
+        text-align: center;
+    }
+    footer p{
         text-align: center;
     }
 
